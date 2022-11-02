@@ -2,6 +2,7 @@
   font-family: Arial, Helvetica, sans-serif;
   margin-left: 0px;
   margin-right: 0px;
+  margin-top: 0px;
   background-color: #f4fffd;
 }
 .profile-image {
@@ -80,4 +81,10 @@ li:hover {
 }
 div:hover {
   font-weight: bold;
+}
+.nct {
+  margin: 10px;
+  text-align: center;
+  background-color: #f1d7fb;
+  border-radius: 40px;
 }
