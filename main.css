@@ -60,44 +60,30 @@ li:hover {
   background-color: #ee6983;
   border-radius: 40px;
 }
+.name {
+  font-size: x-large;
+  text-align: center;
+  background-color: #ff8dc7;
+  border-radius: 10px;
+  border-width: 10em;
+}
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 1em;
 }
-.item1 {
-  background-color: #ff869e;
-  align-items: center;
-  border-radius: 40px;
-  text-align: center;
-  height: 50px;
-  width: 20vw;
-}
-.item2 {
-  background-color: #ffb9b9;
-  border-radius: 40px;
-  width: 20vw;
-  height: 50px;
-  text-align: center;
-}
-.item3 {
-  background-color: #ff8dc7;
+.activities {
+  background-color: #ffc4c4;
+  border-radius: 10px;
   align-content: center;
-  border-radius: 40px;
-  align-content: center;
-  width: 15vw;
-  height: 50px;
-  text-align: center;
+  width: 20em;
 }
-.item4 {
-  background-color: #e63e6d;
-  border-radius: 40px;
-  width: 20vw;
-  height: 50px;
-  text-align: center;
+.jkpg2 {
+  border-radius: 10px;
 }
-div:hover {
-  font-weight: bold;
+.activities:hover {
+  color: #850e35;
 }
 .nct {
   margin: 10px;
@@ -105,111 +91,45 @@ div:hover {
   background-color: #e63e6d;
   border-radius: 40px;
 }
-.jkpg1 {
-  border-color: #ff869e;
-  border-style: solid;
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 }
-.jkpg2 {
-  border-color: #ffb9b9;
-  border-style: solid;
-}
-.jkpg3 {
-  border-color: #ff8dc7;
-  border-style: solid;
-}
-.jkpg4 {
-  border-color: #e63e6d;
-  border-style: solid;
-}
-.jkpg1:hover {
-  border-width: 5px;
-}
-.jkpg2:hover {
-  border-width: 5px;
-}
-.jkpg3:hover {
-  border-width: 5px;
-}
-.jkpg4:hover {
-  border-width: 5px;
-}
-@media screen and (min-height: 844px) {
-  .running-text {
-    columns: 2;
-  }
-  .texto-numero2 {
-    columns: 2;
-  }
-  .profile-image {
-    margin-right: 0px;
-  }
-  .item1 {
-    border-radius: 10px;
-    font-size: smaller;
-    text-align: center;
-  }
-  .item2 {
-    border-radius: 10px;
-    font-size: smaller;
-    width: 100px;
-  }
-  .item3 {
-    border-radius: 10px;
-    font-size: smaller;
-    width: 100px;
-    text-align: center;
-  }
-  .item4 {
-    border-radius: 10px;
-    font-size: smaller;
-    width: 100px;
-  }
-  .footer-position {
-    padding-top: 250px;
-    position: static;
-  }
-  .container {
-    flex-direction: column;
-    align-content: flex-start;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
-  .projects {
-    font-size: smaller;
-  }
-  .doggie {
-    margin-left: 150px;
-    position: absolute;
-  }
-}
-
 .work1 {
   background-color: #ffc4c4;
   width: 20vw;
+  height: 5em;
   border-radius: 5px;
   text-align: center;
 }
 .work2 {
   background-color: #ee6983;
   width: 20vw;
+  height: 5em;
   border-radius: 5px;
   text-align: center;
 }
 .work3 {
   background-color: #ff7d7d;
   width: 20vw;
+  height: 5em;
   border-radius: 5px;
   text-align: center;
 }
 .work4 {
   background-color: #ff8787;
   width: 20vw;
+  height: 5em;
   border-radius: 5px;
   text-align: center;
 }
 .work5 {
   background-color: #e0144c;
   width: 20vw;
+  height: 5em;
   border-radius: 5px;
   text-align: center;
 }
@@ -239,23 +159,6 @@ div:hover {
   background-color: #ee6983;
   border-radius: 10px;
 }
-.projects {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  row-gap: 2rem;
-}
-.doggie {
-  float: right;
-  margin-right: 300px;
-  margin-top: 50px;
-  border-color: #e0144c;
-  border-style: double;
-}
-.doggie:hover {
-  border-width: 5px;
-}
 .cute {
   margin: 5px;
   text-align: center;
@@ -277,4 +180,55 @@ div:hover {
   text-align: center;
   background-color: #ee6983;
   border-radius: 40px;
+}
+@media screen and (min-height: 844px) and (min-width: 100px) {
+  .running-text {
+    columns: 2;
+  }
+  .texto-numero2 {
+    columns: 2;
+  }
+  .profile-image {
+    margin-right: 0px;
+  }
+  .item1 {
+    border-radius: 10px;
+    font-size: smaller;
+    text-align: center;
+  }
+  .item2 {
+    border-radius: 10px;
+    font-size: smaller;
+    width: 100px;
+  }
+  .item3 {
+    border-radius: 10px;
+    font-size: smaller;
+    width: 100px;
+    height: 90px;
+    text-align: center;
+  }
+  .item4 {
+    border-radius: 10px;
+    font-size: smaller;
+    width: 100px;
+  }
+  .footer-position {
+    padding-top: 250px;
+    position: static;
+  }
+  .container {
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .projects {
+    font-size: x-small;
+    justify-content: space-around;
+  }
+  .jkpg2 {
+    width: 395px;
+  }
 }

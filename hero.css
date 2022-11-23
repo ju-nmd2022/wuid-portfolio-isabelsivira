@@ -1,0 +1,94 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+html,
+body {
+  background-image: url(IMG-3047.jpg);
+}
+h1 {
+  color: white;
+}
+.hero-title {
+  animation-name: hero-section;
+  animation-duration: 3s;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 11em;
+  font-size: x-large;
+}
+.buttons {
+  animation-name: buttonsec;
+  animation-duration: 3s;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5em;
+  font-size: x-large;
+}
+.page1 {
+  height: 2em;
+  width: 8em;
+  background-color: #ff7d7d;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+}
+.page2 {
+  height: 2em;
+  width: 8em;
+  background-color: #ee6983;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+}
+.page3 {
+  height: 2em;
+  width: 8em;
+  background-color: #ff8dc7;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+}
+.cherry-blossom {
+  margin-left: 63em;
+}
+@keyframes hero-section {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes buttonsec {
+  from {
+    transform: translateX(300px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@media screen and (min-width: 300px) and (min-height: 400px) {
+  * {
+    background-size: cover;
+  }
+  .bottom {
+    margin-top: 24em;
+  }
+  .footer {
+    margin-top: 90px;
+    margin-left: 87em;
+    position: static;
+  }
+}
